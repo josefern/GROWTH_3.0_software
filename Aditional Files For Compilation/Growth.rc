@@ -1,0 +1,352 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "Growth.h"
+
+// Generated Help ID header file
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "Growth.hm"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_Growth DIALOGEX 30, 60, 403, 176
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_VISIBLE | WS_CAPTION
+CAPTION 
+"              GROWTH                      3D Gravity Inversion                        v. 3.0"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Run / OK",IDOK,271,136,46,20
+    PUSHBUTTON      "Cancel",IDCANCEL,356,137,34,19,NOT WS_TABSTOP
+    EDITTEXT        IDC_EDIT_e1,62,26,43,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_e3,63,88,42,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_e4,63,105,42,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_e12,281,24,27,12,ES_CENTER | ES_AUTOHSCROLL
+    LTEXT           "Gravity data:",IDC_TEXT_t1,20,27,41,8
+    EDITTEXT        IDC_EDIT_e6,228,103,23,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_e8,180,27,49,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_e13,312,24,30,12,ES_CENTER | ES_AUTOHSCROLL
+    LTEXT           "Dens.model:",IDC_TEXT_t3,20,90,39,8
+    LTEXT           "Residuals:",IDC_TEXT_t4,21,106,35,8
+    GROUPBOX        "&Output files",IDC_BOX_b2,13,75,99,49
+    GROUPBOX        "&Inversion parameters",IDC_BOX_b5,122,75,138,49
+    CONTROL         "Propagate data Stdev",IDC_CHECK_c1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,24,47,82,11
+    GROUPBOX        "&Dens.contr.(kg/m3)  Neg Pos",IDC_BOX_b4,270,10,118,115
+    CONTROL         "Adj",IDC_CHECK_c3,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | WS_TABSTOP,233,27,18,12
+    LTEXT           "Camacho-2019",IDC_STATIC,311,163,48,8,WS_DISABLED
+    LTEXT           "&Balance fact. mass-fitness >0 : ",IDC_TEXT_t6,128,106,96,8
+    LTEXT           "Offset. g0 (uGal)",IDC_TEXT_t7,127,28,51,8
+    LTEXT           "gx,gy (uGal/km)",IDC_TEXT_t8,127,48,51,8
+    EDITTEXT        IDC_EDIT_e10,205,47,24,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_e9,181,47,23,12,ES_CENTER | ES_AUTOHSCROLL
+    CONTROL         "&Adj",IDC_CHECK_c4,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | WS_TABSTOP,233,47,18,12
+    LTEXT           "&Random search coeffic. >=1 ",IDC_TEXT_t5,128,88,92,8
+    EDITTEXT        IDC_EDIT_e5,228,84,22,12,ES_CENTER | ES_AUTOHSCROLL
+    LTEXT           "Filter.radius (m):",IDC_TEXT_t9,167,146,50,8
+    EDITTEXT        IDC_EDIT_e7,221,144,29,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_e30,80,133,26,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_e31,80,150,26,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "Num.of data points:",IDC_TEXT_t12,17,134,62,8
+    GROUPBOX        "Regional trend",IDC_BOX_b7,121,10,138,60
+    GROUPBOX        "Fitting terrain density",IDC_BOX_b6,122,130,137,33
+    ICON            IDI_ICON1,IDC_STATIC,325,136,20,20,SS_SUNKEN
+    CONTROL         "Adj",IDC_CHECK_c5,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | WS_TABSTOP,127,145,28,11
+    LTEXT           "Num. of mod. cells:",IDC_TEXT_t13,17,150,61,8
+    GROUPBOX        "Input files",IDC_BOX_b1,13,10,99,60
+    CONTROL         "Sub-horiz. discont.",IDC_CHECK_c2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,294,107,78,11
+    CONTROL         "Adj",IDC_CHECK_c6,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | WS_TABSTOP,348,24,29,13
+    LTEXT           "Lateral smoothing (0-20)",IDC_TEXT_t10,277,65,76,8
+    EDITTEXT        IDC_EDIT_e11,357,64,22,12,ES_CENTER | ES_AUTOHSCROLL
+    LTEXT           "Flattening coef. (0-20)",IDC_TEXT_t11,278,49,71,8
+    EDITTEXT        IDC_EDIT_e14,357,48,22,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_e15,357,80,22,12,ES_CENTER | ES_AUTOHSCROLL
+    LTEXT           "Upward weighting (0-5)",IDC_TEXT_t14,278,81,77,8
+END
+
+IDD_Layers DIALOGEX 50, 50, 177, 167
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION
+CAPTION "Sub-horizontal discontinuity levels"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,132,52,36,50
+    PUSHBUTTON      "Cancel",IDCANCEL,132,108,36,19
+    LTEXT           "2",IDC_TEXT_t2,13,49,8,8
+    LTEXT           "3",IDC_TEXT_t3,13,62,8,8
+    LTEXT           "1",IDC_TEXT_t1,13,33,8,8
+    EDITTEXT        IDC_EDIT2,21,46,37,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,21,60,37,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT4,21,74,37,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT5,21,88,37,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT6,21,101,37,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT7,61,33,31,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT8,61,46,31,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT9,61,60,31,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT10,61,74,31,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT11,61,88,31,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT12,61,101,31,12,ES_CENTER | ES_AUTOHSCROLL
+    LTEXT           "4",IDC_TEXT_t18,13,76,8,8
+    LTEXT           "Layer    Depth    Contrast     Flattening",IDC_TEXT_t7,9,9,125,10
+    LTEXT           "nº           (-m)         kg/m3       (0-5)",IDC_TEXT_t8,13,20,113,10
+    EDITTEXT        IDC_EDIT13,101,33,22,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT14,101,46,22,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT15,101,60,22,12,ES_CENTER | ES_AUTOHSCROLL
+    LTEXT           "5",IDC_TEXT_t5,13,89,8,8
+    EDITTEXT        IDC_EDIT1,21,33,37,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT16,101,74,22,12,ES_CENTER | ES_AUTOHSCROLL,0,HIDC_EDIT16
+    EDITTEXT        IDC_EDIT17,101,88,22,12,ES_CENTER | ES_AUTOHSCROLL,0,HIDC_EDIT17
+    EDITTEXT        IDC_EDIT18,101,101,22,12,ES_CENTER | ES_AUTOHSCROLL,0,HIDC_EDIT18
+    LTEXT           "6",IDC_TEXT_t31,13,104,8,8
+    EDITTEXT        IDC_EDIT20,21,114,37,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT21,61,114,31,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT22,101,114,22,12,ES_CENTER | ES_AUTOHSCROLL,0,HIDC_EDIT22
+    LTEXT           "7",IDC_TEXT_t32,13,117,8,8
+    EDITTEXT        IDC_EDIT23,21,127,37,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT24,61,127,31,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT25,101,127,22,12,ES_CENTER | ES_AUTOHSCROLL,0,HIDC_EDIT25
+    LTEXT           "8",IDC_TEXT_t33,13,129,8,8
+    EDITTEXT        IDC_EDIT26,22,139,37,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT27,62,139,31,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT28,102,139,22,12,ES_CENTER | ES_AUTOHSCROLL,0,HIDC_EDIT28
+    LTEXT           "9",IDC_TEXT_t34,14,142,8,8
+END
+
+IDD_DownIncrease DIALOGEX 50, 60, 233, 102
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION
+CAPTION "Downward Dens. Increase"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,165,45,47,16
+    PUSHBUTTON      "Cancel",IDCANCEL,165,69,45,17
+    EDITTEXT        IDC_EDIT_e1,110,41,21,12,ES_AUTOHSCROLL
+    LTEXT           "Shape coeff.",IDC_TEXT_t2,145,20,41,8
+    EDITTEXT        IDC_EDIT_e2,188,18,33,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_e3,110,17,23,12,ES_CENTER | ES_AUTOHSCROLL
+    CONTROL         "Exponential increase:",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,15,18,76,11
+    CONTROL         "Linear increase:",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON,15,42,70,11
+    EDITTEXT        IDC_EDIT_e4,99,66,29,12,ES_AUTOHSCROLL
+    LTEXT           "Mean model depth (m):",IDC_TEXT_t18,26,68,72,8
+END
+
+IDD_Grid3D DIALOGEX 30, 60, 179, 158
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Geometry of 3D partition"
+FONT 8, "MS Sans Serif", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,53,128,50,19
+    PUSHBUTTON      "Cancel",IDCANCEL,109,128,50,18
+    CONTROL         "Re-run",IDC_CHECK_c1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,87,109,38,10
+    LTEXT           "Depth (m) of the model top:",IDC_TEXT_t1,16,35,95,8
+    LTEXT           "Depth (m) of the model bottom:",IDC_TEXT_t2,15,50,104,8
+    LTEXT           "Mean length (m) for cells:",IDC_TEXT_t3,16,66,95,8
+    EDITTEXT        IDC_EDIT_e1,117,35,30,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_e2,117,50,30,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_e3,117,65,30,12,ES_CENTER | ES_AUTOHSCROLL
+    LTEXT           "Number of cells:",IDC_TEXT_t4,55,88,53,8
+    EDITTEXT        IDC_EDIT_e4,118,86,29,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    ICON            IDI_ICON1,IDC_STATIC,23,128,20,20,SS_SUNKEN
+    LTEXT           "Number of points:",IDC_TEXT_t5,56,16,56,8
+    EDITTEXT        IDC_EDIT_e5,118,15,29,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "Growth.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_Growth, DIALOG
+    BEGIN
+        RIGHTMARGIN, 402
+        BOTTOMMARGIN, 174
+    END
+
+    IDD_Layers, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 170
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 160
+    END
+
+    IDD_DownIncrease, DIALOG
+    BEGIN
+        RIGHTMARGIN, 232
+        BOTTOMMARGIN, 101
+    END
+
+    IDD_Grid3D, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 172
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 155
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_Growth AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_Layers AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DownIncrease AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_Grid3D AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Spanish (Spain, International Sort) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESN)
+LANGUAGE LANG_SPANISH, SUBLANG_SPANISH_MODERN
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_Model DIALOGEX 100, 100, 147, 151
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Model of layered medium "
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Run / OK",IDOK,83,116,56,17
+    PUSHBUTTON      "Cancel",IDCANCEL,15,116,29,17
+    LTEXT           "Num.(1-18)     Flat.     Z Bottom",IDC_TEXT_t30,24,22,101,10
+    EDITTEXT        IDC_EDIT1,19,86,20,12,ES_CENTER | ES_AUTOHSCROLL,0,HIDC_EDIT1
+    EDITTEXT        IDC_EDIT3,93,34,35,12,ES_CENTER | ES_AUTOHSCROLL,0,HIDC_EDIT3
+    EDITTEXT        IDC_EDIT4,33,34,16,12,ES_CENTER | ES_AUTOHSCROLL,0,HIDC_EDIT4
+    EDITTEXT        IDC_EDIT5,62,34,21,12,ES_CENTER | ES_AUTOHSCROLL,0,HIDC_EDIT5
+    EDITTEXT        IDC_EDIT7,67,86,21,12,ES_CENTER | ES_AUTOHSCROLL,0,HIDC_EDIT7
+    EDITTEXT        IDC_EDIT6,44,86,21,12,ES_CENTER | ES_AUTOHSCROLL,0,HIDC_EDIT6
+    EDITTEXT        IDC_EDIT8,92,86,21,12,ES_CENTER | ES_AUTOHSCROLL,0,HIDC_EDIT8
+    EDITTEXT        IDC_EDIT9,116,86,21,12,ES_CENTER | ES_AUTOHSCROLL,0,HIDC_EDIT9
+    CONTROL         "Modify individual layers",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,38,60,89,9
+    LTEXT           "Shape     q1n      q2n       q1p     q2p",IDC_TEXT_t35,18,75,117,10
+    ICON            IDI_ICON1,IDC_STATIC,54,115,20,20,SS_SUNKEN
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_Model, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 146
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 148
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_Model AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON1               ICON                    "icon1.ico"
+
+#endif    // Spanish (Spain, International Sort) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,256 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "View.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_View DIALOGEX 50, 40, 266, 93
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_VISIBLE | WS_CAPTION
+CAPTION 
+"         VIEW       Graphical user interface          (GROWTH 2.0)      "
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "Camacho-2011",IDC_STATIC,211,84,54,8,WS_DISABLED
+    DEFPUSHBUTTON   "Continue/OK",IDOK,130,10,84,19
+    PUSHBUTTON      "Cancel",IDCANCEL,219,10,37,19
+    EDITTEXT        IDC_EDIT_e1,71,18,47,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_e2,71,32,47,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_e3,71,46,47,12,ES_AUTOHSCROLL
+    LTEXT           "Anomaly Data:",IDC_TEXT_t1,15,20,53,8
+    LTEXT           "3D dens. model:",IDC_TEXT_t2,14,34,53,8
+    LTEXT           "Residual values:",IDC_TEXT_t3,15,48,53,8
+    GROUPBOX        "&Data files",IDC_BOX_b1,8,7,116,75
+    LTEXT           "-> Num. of data:",IDC_TEXT_t6,167,41,55,8
+    LTEXT           "-> Num. of cells:",IDC_TEXT_t7,168,55,53,8
+    EDITTEXT        IDC_EDIT_e6,227,41,23,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER
+    EDITTEXT        IDC_EDIT_e7,227,54,24,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER
+    ICON            IDI_ICON1,IDC_STATIC,138,42,21,20,SS_SUNKEN
+    GROUPBOX        "",IDC_BOX_b8,130,31,128,51
+    LTEXT           "Base map file:",IDC_TEXT_t4,15,62,45,8
+    EDITTEXT        IDC_EDIT_e4,71,61,47,12,ES_AUTOHSCROLL
+    LTEXT           "-> Num. of base map points:",IDC_TEXT_t8,136,68,89,8
+    EDITTEXT        IDC_EDIT_e8,227,68,24,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "View.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_View, DIALOG
+    BEGIN
+        RIGHTMARGIN, 265
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_View AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Spanish (Spain, International Sort) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESN)
+LANGUAGE LANG_SPANISH, SUBLANG_SPANISH_MODERN
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_Mapa DIALOGEX 100, 120, 187, 74
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION
+CAPTION "    VIEW        Colour scale      (GROWTH 2.0)"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,136,9,36,16
+    PUSHBUTTON      "Cancel",IDCANCEL,136,30,35,14
+    LTEXT           "&Minimum value (kg/m3)",IDC_TEXT1,8,10,76,12
+    EDITTEXT        IDC_EDIT1,91,8,32,12,ES_AUTOHSCROLL
+    LTEXT           "&Label increment (kg/m3)",IDC_TEXT2,8,25,79,12
+    EDITTEXT        IDC_EDIT2,91,23,31,12,ES_AUTOHSCROLL
+    LTEXT           "&Set minimum to (kg/m3)",IDC_TEXT3,8,40,77,12
+    EDITTEXT        IDC_EDIT3,91,38,32,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT4,101,52,21,12,ES_AUTOHSCROLL
+    LTEXT           "Size fract. for regional cells",IDC_TEXT5,9,54,88,12
+END
+
+IDD_Interp DIALOGEX 100, 150, 221, 58
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION
+CAPTION "      VIEW           Interpolation         (GROWTH 2.0)"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,128,34,36,14
+    PUSHBUTTON      "Cancel",IDCANCEL,170,34,35,14,NOT WS_VISIBLE
+    LTEXT           "Number of grid lines:",IDC_TEXT3,11,8,64,12
+    EDITTEXT        IDC_EDIT3,82,5,27,12,ES_AUTOHSCROLL
+    LTEXT           "Search radius (m):",IDC_TEXT4,11,22,60,8
+    EDITTEXT        IDC_EDIT4,82,20,27,12,ES_AUTOHSCROLL
+    CONTROL         "Out to  *.grd files",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,130,6,76,8
+    CONTROL         "Out to  *.bln files",IDC_CHECK3,"Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,130,18,76,8
+    LTEXT           "Domain limit (0-100):",IDC_TEXT5,11,36,63,8
+    EDITTEXT        IDC_EDIT5,82,34,28,12,ES_AUTOHSCROLL
+END
+
+IDD_Perspec DIALOGEX 0, 0, 186, 89
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,131,49,42,14
+    PUSHBUTTON      "Cancel",IDCANCEL,131,67,41,14
+    EDITTEXT        IDC_EDIT1,87,5,26,11,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,87,19,26,11,ES_AUTOHSCROLL
+    LTEXT           "Azimuth angle (deg)",IDC_STATIC,12,7,72,8
+    LTEXT           "Elevation angle (deg)",IDC_STATIC,12,20,68,8
+    CONTROL         "Posit mass",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,123,25,50,8
+    CONTROL         "Negat mass",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,123,9,50,8
+    EDITTEXT        IDC_EDIT3,87,72,26,11,ES_AUTOHSCROLL
+    LTEXT           "Remove above (m)",IDC_STATIC,12,73,65,8
+    EDITTEXT        IDC_EDIT4,87,32,26,11,ES_AUTOHSCROLL
+    LTEXT           "Number of steps",IDC_STATIC,12,33,68,8
+    EDITTEXT        IDC_EDIT5,87,45,26,11,ES_AUTOHSCROLL
+    LTEXT           "Vertical/horizontal",IDC_STATIC,12,46,64,8
+    EDITTEXT        IDC_EDIT6,87,58,26,11,ES_AUTOHSCROLL
+    LTEXT           "Figure bottom",IDC_STATIC,11,59,64,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_Mapa, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 73
+    END
+
+    IDD_Interp, DIALOG
+    BEGIN
+        RIGHTMARGIN, 220
+        BOTTOMMARGIN, 57
+    END
+
+    IDD_Perspec, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 82
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_Interp AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_Mapa AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_Perspec AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON1               ICON                    "icon1.ico"
+
+#endif    // Spanish (Spain, International Sort) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
